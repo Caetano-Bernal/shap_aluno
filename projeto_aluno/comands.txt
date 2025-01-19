@@ -1,0 +1,21 @@
+create virtual venv
+python3 -m venv venv
+
+activate venv
+source venv/bin/activate
+
+deactivate venv
+deactivate
+
+install jupyter notebook
+pip install jupyter
+
+start jupyter notebook
+jupyter notebook
+
+
+doker build
+docker build -t fast_api:latest .
+docker run -d -it -p 8000:8000 --name fastapi fast_api:latest
+docker compose up -d
+docker compose stop

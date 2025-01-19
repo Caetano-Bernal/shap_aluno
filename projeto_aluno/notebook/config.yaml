@@ -1,0 +1,19 @@
+split:
+ seed: 42
+ test_size: 0.2
+
+data:
+ raw_path: ../data/raw_data/raw_data.csv
+ trusted_path: ../data/trusted_data/trusted_data.csv
+ train_path: ../data/train_data/train_data.csv
+ test_path: ../data/test_data/test_data.csv
+
+ 
+imagem:
+ path: ../imagens/mind map.png
+
+
+ 
+model:
+  ml_path: ../api/pipe_xgb_model.pkl
+  shap_path: ../api/shap_model.pkl
